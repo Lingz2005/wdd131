@@ -1,0 +1,200 @@
+/* ==========================
+   place.css - Nigeria Page
+   Author: Hinckley Ohaegbulem
+   ========================== */
+
+/* --- Root Colors & Fonts --- */
+:root {
+  --primary-color: #005200;      /* Darker green for better contrast */
+  --secondary-color: #f2fdf2;    
+  --accent-color: #d99000;       /* Darker gold for AA contrast */
+  --text-color: #111;            /* Stronger dark text */
+  --header-bg: #003a00;          
+  --footer-bg: #001f1f;          
+  --font-main: "Poppins", sans-serif;
+  --max-width: 1100px;
+}
+
+/* --- Reset & Base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- Header --- */
+header {
+  background-color: var(--header-bg);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* --- Pseudo-element emoticon (DESKTOP ONLY) --- */
+@media (min-width: 700px) {
+  header h1::after {
+      content: " 😊";
+  }
+}
+
+header h1 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  letter-spacing: 1px;
+}
+
+/* --- Main Layout --- */
+main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* --- Hero Section --- */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.6s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Data Section --- */
+.data {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.data h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.data p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.data .label {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.data .value {
+  margin-left: 0.5rem;
+  color: #222;
+}
+
+/* --- Weather Section --- */
+.weather {
+  background: linear-gradient(135deg, #ffffff, #e8f5e9);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.weather h2 {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+/* --- SVG Weather Icon (MOBILE ONLY) --- */
+.weather-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Hide on large screens */
+@media (min-width: 700px) {
+  .weather-icon {
+      display: none;
+  }
+}
+
+.weatherinfo p {
+  font-size: 1.05rem;
+  margin: 0.5rem 0;
+}
+
+.wind-chill {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--footer-bg);
+  color: #f2f2f2;   /* Improved contrast */
+  text-align: center;
+  padding: 1.2rem 1rem;
+  font-size: 0.95rem;
+  margin-top: auto;
+}
+
+footer .highlight {
+  color: var(--accent-color);
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  main {
+      padding: 0 0.5rem;
+  }
+
+  .data, .weather {
+      padding: 1.5rem;
+  }
+
+  .data h2, .weather h2 {
+      font-size: 1.3rem;
+  }
+}
+
+/* --- Hover/Focus Accessibility --- */
+a, button, img {
+  transition: all 0.3s ease;
+}
+
+a:focus, button:focus, img:focus {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 3px;
+}

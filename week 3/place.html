@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 – Dynamic Web Fundamentals | Jesse Nnadi</title>
+  
+  <!-- Meta Information -->
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Jesse Nnadi. Learn more about Nigeria — its culture, weather, and facts." />
+  <meta name="author" content="Jesse Nnadi" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS & JS -->
+  <link rel="stylesheet" href="styles/places.css" />
+  <link rel="stylesheet" href="styles/places-large.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Explore Nigeria <span class="flag">🇳🇬</span></h1>
+  </header>
+
+  <main>
+    <!-- HERO IMAGE SECTION -->
+    <section class="hero">
+      <picture>
+        <!-- Large screens -->
+        <source srcset="images/temple-large.jpeg" media="(min-width: 1000px)">
+        <img src="images/temple-small.jpeg" alt="Scenic view of Nigeria" width="500" height="250">
+      </picture>
+    </section>
+
+    <!-- DATA SECTION -->
+    <section class="data">
+      <h2>Country Data</h2>
+
+      <p class="label">Area:</p>
+      <p class="value">923,768 Sq Km</p>
+
+      <p class="label">Population:</p>
+      <p class="value">223,804,632</p>
+
+      <p class="label">Capital:</p>
+      <p class="value">Abuja</p>
+
+      <p class="label">Languages:</p>
+      <p class="value">English, Hausa, Yoruba, Igbo, and others</p>
+
+      <p class="label">Currency:</p>
+      <p class="value">Naira (₦)</p>
+
+      <p class="label">Time Zone:</p>
+      <p class="value">UTC +1</p>
+
+      <p class="label">Calling Code:</p>
+      <p class="value">+234</p>
+
+      <p class="label">Internet TLD:</p>
+      <p class="value">.ng</p>
+    </section>
+
+    <!-- WEATHER SECTION -->
+    <section class="weather">
+      <h2>Weather <img src="image/8726446_wind_sun_icon.svg" alt="weather icon" class="weather-icon"></h2>
+
+      <div class="weatherinfo">
+        <p>Temperature: <span id="temperature">28</span>°C</p>
+        <p>Condition: <span id="condition">Sunny</span></p>
+        <p>Wind Speed: <span id="wind-speed">6</span> km/h</p>
+        <p class="wind-chill">Wind Chill: <span id="windChillValue">--</span></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="currentYear"></span> 🌍 Jesse Nnadi | Nigeria 🇳🇬</p>
+    <p id="lastModified">
+      <span class="highlight">Last Modification:</span>
+    </p>
+  </footer>
+
+</body>
+</html>
