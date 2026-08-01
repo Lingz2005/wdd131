@@ -3,37 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Temple directory with filters showing old, new, large, and small temples.">
-  <title>Temple Directory</title>
+
+  <title>Temple Album</title>
+  <meta name="description" content="Temple album showing old, new, large, and small temples with filters.">
+  <meta name="author" content="Your Name">
 
   <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
 </head>
 
 <body>
 
 <header>
-  <h1>Temple Directory</h1>
+  <h1>Temple Album</h1>
 
-  <!-- Accessibility improvement -->
-  <nav aria-label="Temple Filters">
-    <button onclick="filterTemples('all')">Home</button>
-    <button onclick="filterTemples('old')">Old</button>
-    <button onclick="filterTemples('new')">New</button>
-    <button onclick="filterTemples('large')">Large</button>
-    <button onclick="filterTemples('small')">Small</button>
+  <nav>
+    <a href="#" id="home">Home</a>
+    <a href="#" id="old">Old</a>
+    <a href="#" id="new">New</a>
+    <a href="#" id="large">Large</a>
+    <a href="#" id="small">Small</a>
   </nav>
 </header>
 
 <main>
-  <!-- Semantic fix -->
   <section id="cards"></section>
 </main>
 
 <footer>
-  <p>&copy; 2026 | Temple Project</p>
+  <p>&copy; 2026 | Your Name</p>
 </footer>
-
-<script src="scripts/place.js"></script>
 
 </body>
 </html>
