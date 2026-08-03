@@ -20,44 +20,55 @@
 </header>
 
 <main>
-  <form id="reviewForm">
+  <form id="reviewForm" method="get" action="review.html">
 
+    <!-- Product -->
     <div class="form-group">
       <label for="product">Product Name <span class="required">*</span></label>
       <select id="product" name="product" required>
-        <option value="">Select a Product</option>
+        <option value="" disabled selected>Select a Product...</option>
       </select>
     </div>
 
+    <!-- Rating (RADIO) -->
     <div class="form-group">
-      <label for="rating">Overall Rating <span class="required">*</span></label>
-      <select id="rating" name="rating" required>
-        <option value="">Select Rating</option>
-        <option value="1">1 ⭐</option>
-        <option value="2">2 ⭐⭐</option>
-        <option value="3">3 ⭐⭐⭐</option>
-        <option value="4">4 ⭐⭐⭐⭐</option>
-        <option value="5">5 ⭐⭐⭐⭐⭐</option>
-      </select>
+      <p>Overall Rating <span class="required">*</span></p>
+
+      <label><input type="radio" name="rating" value="1" required> 1 ⭐</label>
+      <label><input type="radio" name="rating" value="2"> 2 ⭐⭐</label>
+      <label><input type="radio" name="rating" value="3"> 3 ⭐⭐⭐</label>
+      <label><input type="radio" name="rating" value="4"> 4 ⭐⭐⭐⭐</label>
+      <label><input type="radio" name="rating" value="5"> 5 ⭐⭐⭐⭐⭐</label>
     </div>
 
+    <!-- Date -->
     <div class="form-group">
       <label for="date">Date of Installation <span class="required">*</span></label>
       <input type="date" id="date" name="date" required>
     </div>
 
+    <!-- Checkboxes -->
+    <div class="form-group">
+      <p>Features Used</p>
+
+      <label><input type="checkbox" name="features" value="design"> Design</label>
+      <label><input type="checkbox" name="features" value="performance"> Performance</label>
+      <label><input type="checkbox" name="features" value="battery"> Battery</label>
+      <label><input type="checkbox" name="features" value="price"> Price</label>
+    </div>
+
+    <!-- Review -->
     <div class="form-group">
       <label for="review">Write Review</label>
-      <textarea id="review" name="review" rows="4" placeholder="Write your experience..."></textarea>
+      <textarea id="review" name="review" rows="4"></textarea>
     </div>
 
     <button type="submit">Submit Review</button>
 
   </form>
 
-  <section class="review-counter">
-    <p id="reviewCount"></p>
-  </section>
+  <!-- Review Counter -->
+  <p id="reviewCount"></p>
 </main>
 
 <footer>

@@ -6,7 +6,7 @@ const products = [
   { id: "p4", name: "Dell XPS 13" }
 ];
 
-// Populate Product Dropdown
+// Populate dropdown
 const productSelect = document.getElementById("product");
 
 products.forEach(product => {
@@ -16,7 +16,7 @@ products.forEach(product => {
   productSelect.appendChild(option);
 });
 
-// localStorage Review Counter
+// localStorage counter
 let reviewCount = localStorage.getItem("reviewCount");
 
 if (!reviewCount) {
@@ -26,7 +26,7 @@ if (!reviewCount) {
 document.getElementById("reviewCount").textContent =
   `Reviews submitted: ${reviewCount}`;
 
-// Form Submission
+// Update on submit
 document.getElementById("reviewForm").addEventListener("submit", function () {
   reviewCount++;
   localStorage.setItem("reviewCount", reviewCount);
