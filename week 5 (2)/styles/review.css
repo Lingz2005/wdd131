@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Group spacing */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Required star */
+.required {
+  color: red;
+}
+
+/* Inputs */
+input, select, textarea {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Button */
+button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Review Counter */
+.review-counter {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
