@@ -1,43 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Join Football Hub">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join Football Hub</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <script defer src="scripts/script.js"></script>
-</head>
+  <meta name="description" content="Join KickMaster Football Hub and become part of the football community.">  <title>Join KickMaster</title>  <link rel="stylesheet" href="styles/styles.css">
+  <script defer src="scripts/main.js"></script>
+</head><body><header class="header">
+  <h1>Join KickMaster</h1>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+</header><main>
+  <section><form id="joinForm" class="form-box">
+  <h2>Join the Community</h2>
 
-<body>
+  <label for="name">Name</label>
+  <input type="text" id="name" required>
 
-<header>
-  <h1>Join Football Hub</h1>
-</header>
-
-<main>
-
-<form id="joinForm">
-
-  <label>Name:
-    <input type="text" id="name" required>
-  </label>
-
-  <label>Email:
-    <input type="email" id="email" required>
-  </label>
-
-  <label>Favorite Club:
-    <input type="text" id="club">
-  </label>
+  <label for="position">Favorite Position</label>
+  <select id="position">
+    <option value="ST">Striker (ST)</option>
+    <option value="CAM">Midfielder (CAM)</option>
+    <option value="CB">Defender (CB)</option>
+  </select>
 
   <button type="submit">Submit</button>
-
 </form>
 
-<p id="formMessage"></p>
+<p id="result"></p>
 
-</main>
-
-</body>
+  </section>
+</main><footer>
+  <p>&copy; 2026 KickMaster Football Hub</p>
+</footer></body>
 </html>
