@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Review</title>
+<title>Join</title>
 <link rel="stylesheet" href="styles/styles.css">
 <script defer src="scripts/main.js"></script>
 </head>
@@ -11,7 +11,7 @@
 <body>
 
 <header>
-  <h1>Team Members</h1>
+  <h1>Join the Team</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="join.html">Join</a>
@@ -20,7 +20,19 @@
 </header>
 
 <main>
-  <section id="members"></section>
+  <form id="joinForm">
+    
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+
+    <label for="player">Favorite Player</label>
+    <input type="text" id="player" required>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+  <p id="message"></p>
 </main>
 
 </body>

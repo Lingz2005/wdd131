@@ -1,70 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="KickMaster Football Hub - Elite tactics, player recommendations, and team-building guides for FC Mobile.">
-    <meta name="author" content="Jesse Chisom Nnadi">
-    <title>KickMaster Football Hub</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script defer src="scripts/main.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Football Hub</title>
+<link rel="stylesheet" href="styles/styles.css">
+<script defer src="scripts/main.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <h1>⚽ KickMaster</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="form.html">Join</a>
-            <button id="themeToggle" aria-label="Toggle theme">🌙</button>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h2>Dominate FC Mobile</h2>
-                <p id="welcome"></p>
-                <button id="newTip" type="button">Get Winning Tip</button>
-            </div>
-            <img src="images/team.jpg" alt="Professional football team lineup" loading="lazy">
-        </section>
 
-        <section class="players-section">
-            <h2>Top Player Recommendations</h2>
-            <p>Which players should I use to build the best team in FC Mobile? Here are top picks:</p>
-            <div id="players" class="grid"></div>
-        </section>
+<header>
+  <h1>⚽ Football Hub</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="join.html">Join</a>
+    <a href="review.html">Review</a>
+  </nav>
+</header>
 
-        <section class="tactics-section">
-            <h2>Winning Tactics & Strategies</h2>
-            <p>What tactics can help me win matches consistently?</p>
-            <div class="tactics-list">
-                <div class="tactic-card">
-                    <h3>Counter Attack</h3>
-                    <p>Use fast wingers and a 4-3-3 formation to catch opponents off-guard during transitions.</p>
-                </div>
-                <div class="tactic-card">
-                    <h3>Midfield Control</h3>
-                    <p>Prioritize high-stamina central midfielders to dominate possession and dictate tempo.</p>
-                </div>
-                <div class="tactic-card">
-                    <h3>Solid Defense</h3>
-                    <p>Keep your center-backs disciplined and avoid rushing out to maintain a tight backline.</p>
-                </div>
-            </div>
-        </section>
+<main>
+  <section class="hero">
+    <h2>Welcome to the Ultimate Football Community</h2>
+    <p>Join fans who love Mbappé, Bellingham, and Salah.</p>
+  </section>
 
-        <section class="tips">
-            <h2>Pro Tips Generator</h2>
-            <p id="tip">Click the button above to get a dynamic tip!</p>
-        </section>
-    </main>
+  <section class="players">
+    <h2>Top Players</h2>
 
-    <footer>
-        <p>&copy; 2026 KickMaster Football Hub</p>
-    </footer>
+    <div class="card">
+      <img src="images/mbappe.jpg" alt="Mbappe" loading="lazy">
+      <h3>Kylian Mbappé</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/bellingham.jpg" alt="Bellingham" loading="lazy">
+      <h3>Jude Bellingham</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/salah.jpg" alt="Salah" loading="lazy">
+      <h3>Mohamed Salah</h3>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Football Hub</p>
+</footer>
+
 </body>
-
 </html>
