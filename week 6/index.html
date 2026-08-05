@@ -1,30 +1,70 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="KickMaster Football Hub - Elite tactics and players for FC Mobile.">
-<meta name="author" content="Jesse Chisom Nnadi"><title>KickMaster Football Hub</title><link rel="stylesheet" href="styles/styles.css">
-<script defer src="scripts/main.js"></script>
-</head><body><header class="header">
-<h1>⚽ KickMaster</h1><nav>
-<a href="index.html">Home</a>
-<a href="form.html">Join</a>
-<button id="themeToggle" aria-label="Toggle theme">🌙</button>
-</nav>
-</header><main><section class="hero">
-<div class="hero-text">
-<h2>Dominate FC Mobile</h2>
-<p id="welcome"></p>
-<button id="newTip" type="button">Get Winning Tip</button>
-</div>
-<img src="images/team.jpg" alt="Professional football team lineup" loading="lazy">
-</section><section class="players-section">
-<h2>Top Players</h2>
-<div id="players" class="grid"></div>
-</section><section class="tips">
-<h2>Pro Tips</h2>
-<p id="tip">Click the button to get a tip</p>
-</section></main><footer>
-<p>&copy; 2026 KickMaster Football Hub</p>
-</footer></body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="KickMaster Football Hub - Elite tactics, player recommendations, and team-building guides for FC Mobile.">
+    <meta name="author" content="Jesse Chisom Nnadi">
+    <title>KickMaster Football Hub</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>⚽ KickMaster</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="form.html">Join</a>
+            <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Dominate FC Mobile</h2>
+                <p id="welcome"></p>
+                <button id="newTip" type="button">Get Winning Tip</button>
+            </div>
+            <img src="images/team.jpg" alt="Professional football team lineup" loading="lazy">
+        </section>
+
+        <section class="players-section">
+            <h2>Top Player Recommendations</h2>
+            <p>Which players should I use to build the best team in FC Mobile? Here are top picks:</p>
+            <div id="players" class="grid"></div>
+        </section>
+
+        <section class="tactics-section">
+            <h2>Winning Tactics & Strategies</h2>
+            <p>What tactics can help me win matches consistently?</p>
+            <div class="tactics-list">
+                <div class="tactic-card">
+                    <h3>Counter Attack</h3>
+                    <p>Use fast wingers and a 4-3-3 formation to catch opponents off-guard during transitions.</p>
+                </div>
+                <div class="tactic-card">
+                    <h3>Midfield Control</h3>
+                    <p>Prioritize high-stamina central midfielders to dominate possession and dictate tempo.</p>
+                </div>
+                <div class="tactic-card">
+                    <h3>Solid Defense</h3>
+                    <p>Keep your center-backs disciplined and avoid rushing out to maintain a tight backline.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips">
+            <h2>Pro Tips Generator</h2>
+            <p id="tip">Click the button above to get a dynamic tip!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KickMaster Football Hub</p>
+    </footer>
+</body>
+
 </html>
