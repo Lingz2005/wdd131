@@ -1,13 +1,27 @@
-const form = document.getElementById("joinForm");
-
+// ARRAY + localStorage
 let members = JSON.parse(localStorage.getItem("members")) || [];
+
+// FUNCTION
+function saveMember(member) {
+  members.push(member);
+  localStorage.setItem("members", JSON.stringify(members));
+}
+
+// FORM HANDLING
+const form = document.getElementById("joinForm");
 
 if (form) {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const player = document.getElementById("player").value;
+    const name = document.getElementById("name").value.trim();
+    const player = document.getElementById("player").value.trim();
+
+    // CONDITIONAL
+    if (name === "" || player === "") {
+      document.getElementById("message").textContent = "Please fill all fields.";
+      return;
+    }
 
     // OBJECT
     const member = {
@@ -15,14 +29,10 @@ if (form) {
       player: player
     };
 
-    // ARRAY
-    members.push(member);
-
-    // localStorage
-    localStorage.setItem("members", JSON.stringify(members));
+    saveMember(member);
 
     document.getElementById("message").textContent =
-      `Thanks ${name}, you joined successfully!`;
+      `✅ ${name}, you joined successfully!`;
 
     form.reset();
   });
@@ -32,15 +42,17 @@ if (form) {
 const membersSection = document.getElementById("members");
 
 if (membersSection) {
-  membersSection.innerHTML = members.map(member => {
 
-    // TEMPLATE LITERAL
-    return `
-      <div class="card">
-        <h3>${member.name}</h3>
-        <p>Favorite Player: ${member.player}</p>
-      </div>
-    `;
-
-  }).join("");
+  if (members.length === 0) {
+    membersSection.innerHTML = "<p>No members yet.</p>";
+  } else {
+    membersSection.innerHTML = members.map(member => {
+      return `
+        <div class="card">
+          <h3>${member.name}</h3>
+          <p>Favorite Player: ${member.player}</p>
+        </div>
+      `;
+    }).join("");
+  }
 }
