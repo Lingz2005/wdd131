@@ -1,0 +1,43 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #ffffff;
+color: #000000;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #002f5b;
+color: #ffffff;
+padding: 1rem;
+text-align: center;
+}
+
+main {
+padding: 20px;
+}
+
+label {
+display: block;
+margin-top: 10px;
+font-weight: bold;
+}
+
+input, textarea {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+}
+
+button {
+margin-top: 15px;
+padding: 10px;
+background-color: #002f5b;
+color: #ffffff;
+border: none;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #001f3f;
+}

@@ -1,60 +1,36 @@
 body {
   font-family: Arial, sans-serif;
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  background-color: #f4f4f4;
+  margin: 0;
+  background: #ffffff;
+  color: #111;
 }
 
-h1 {
+header, footer {
+  background: #002f6c;
+  color: white;
   text-align: center;
+  padding: 1rem;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+main {
+  padding: 1rem;
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-
-label {
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
 }
 
 .required {
   color: red;
 }
 
-input, select, textarea {
-  padding: 10px;
-  font-size: 16px;
-}
-
 button {
-  padding: 12px;
-  font-size: 16px;
-  background-color: #222;
+  background: #0056b3;
   color: white;
+  padding: 10px;
   border: none;
-  cursor: pointer;
 }
 
 button:hover {
-  background-color: #555;
-}
-
-#reviewCount {
-  margin-top: 20px;
-  text-align: center;
-}
-
-/* ✅ REQUIRED MEDIA QUERY */
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
+  background: #003f80;
 }
