@@ -1,6 +1,7 @@
+// review.js (FINAL)
+// =========================
 
-
-// Product List (used to populate dropdown)
+// Product List
 const products = [
 { id: "p1", name: "iPhone 14" },
 { id: "p2", name: "Samsung Galaxy S23" },
@@ -8,7 +9,7 @@ const products = [
 { id: "p4", name: "PlayStation 5" }
 ];
 
-// Populate product dropdown (index.html only)
+// Populate Product Dropdown (index.html only)
 const productSelect = document.getElementById("product");
 
 if (productSelect) {
@@ -20,19 +21,15 @@ productSelect.appendChild(option);
 });
 }
 
-// Review counter (review.html only)
-const reviewCount = document.getElementById("reviewCount");
+// Review Counter (review.html only)
+const reviewCountDisplay = document.getElementById("reviewCount");
 
-if (reviewCount) {
-let count = localStorage.getItem("reviewCount");
+if (reviewCountDisplay) {
+let count = Number(localStorage.getItem("reviewCount")) || 0;
 
-if (!count) {
-count = 0;
-}
-
-count = Number(count) + 1;
+count += 1;
 
 localStorage.setItem("reviewCount", count);
 
-reviewCount.textContent = count;
+reviewCountDisplay.textContent = count;
 }

@@ -5,34 +5,31 @@
   <title>Product Review</title>  <link rel="stylesheet" href="styles/review.css">
   <script src="scripts/review.js" defer></script>
 </head><body><header>
-  <h1>Product Review Form</h1>
+  <h1>Product Review</h1>
 </header><main>
-  <form action="review.html" method="get"><!-- Product -->
-<label for="product">Product Name</label>
+  <form action="review.html" method="get"><label for="product">Product</label>
 <select id="product" name="product" required>
-  <option value="">Select a Product</option>
+  <option value="" disabled selected>Select a Product</option>
 </select>
 
-<!-- Rating -->
-<label for="rating">Overall Rating</label>
-<select id="rating" name="rating" required>
-  <option value="">Select Rating</option>
-  <option value="1">1 ⭐</option>
-  <option value="2">2 ⭐⭐</option>
-  <option value="3">3 ⭐⭐⭐</option>
-  <option value="4">4 ⭐⭐⭐⭐</option>
-  <option value="5">5 ⭐⭐⭐⭐⭐</option>
-</select>
+<fieldset>
+  <legend>Rating</legend>
+  <label><input type="radio" name="rating" value="1" required> ⭐</label>
+  <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
+  <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
+  <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
+  <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+</fieldset>
 
-<!-- Review -->
+<label for="date">Date of Installation</label>
+<input type="date" id="date" name="date" required>
+
 <label for="review">Written Review</label>
 <textarea id="review" name="review" rows="4" required></textarea>
 
-<!-- Name -->
 <label for="username">Your Name</label>
 <input type="text" id="username" name="username" required>
 
-<!-- Submit -->
 <button type="submit">Submit Review</button>
 
   </form>

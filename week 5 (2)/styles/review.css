@@ -1,4 +1,6 @@
-
+/* =========================
+review.css (FINAL CLEAN VERSION)
+========================= */
 
 * {
   margin: 0;
@@ -8,81 +10,94 @@
 
 body {
 font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
 line-height: 1.5;
 background-color: #ffffff;
 color: #000000;
 }
 
+/* Header */
 header {
-background-color: #333333;
-color: #ffffff;
+background-color: #333;
+color: #fff;
 padding: 1rem;
 text-align: center;
 }
 
+/* Main */
 main {
 max-width: 600px;
 margin: 2rem auto;
 padding: 1rem;
 }
 
+/* Labels */
 label {
 display: block;
 margin-top: 1rem;
 font-weight: bold;
 }
 
+/* Inputs */
 input,
 select,
 textarea {
 width: 100%;
 padding: 0.5rem;
 margin-top: 0.25rem;
-border: 1px solid #666666;
+border: 1px solid #666;
 font-size: 1rem;
 }
 
+/* Focus (Accessibility) */
 input:focus,
 select:focus,
 textarea:focus {
-outline: 2px solid #000000;
+outline: 2px solid #000;
 }
 
+/* Fieldset */
+fieldset {
+margin-top: 1rem;
+padding: 1rem;
+}
+
+/* Button */
 button {
+display: block;
 width: 100%;
 margin-top: 1.5rem;
 padding: 0.5rem;
-background-color: #333333;
-color: #ffffff;
+background-color: #333;
+color: #fff;
 border: none;
-font-size: 1rem;
 cursor: pointer;
 }
 
 button:hover {
-background-color: #000000;
+background-color: #000;
 }
 
+/* Review Count */
 #reviewCount {
-font-size: 1.8rem;
+font-size: 2rem;
 font-weight: bold;
 text-align: center;
 margin-top: 1rem;
 }
 
+/* Link */
 a {
 display: block;
 margin-top: 2rem;
 text-align: center;
-color: #000000;
-text-decoration: underline;
+color: #000;
 }
 
+/* Footer */
 footer {
 margin-top: 2rem;
 padding: 1rem;
 text-align: center;
-background-color: #333333;
-color: #ffffff;
+background-color: #333;
+color: #fff;
 }
