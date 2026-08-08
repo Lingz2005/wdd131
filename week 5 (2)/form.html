@@ -5,10 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Product Review</title>
-  <meta name="description" content="Submit a product review">
+
+  <!-- ✅ Fixed meta description (50–160 chars) -->
+  <meta name="description" content="Submit and share your product review by rating features, performance, and overall experience using this simple review form.">
+
   <meta name="author" content="Jesse Chisom Nnadi">
 
   <link rel="stylesheet" href="styles/review.css">
+
+  <!-- ✅ Required external JavaScript -->
+  <script src="scripts/review.js" defer></script>
 </head>
 
 <body>
@@ -20,16 +26,16 @@
 <main>
   <form method="get" action="review.html">
 
-    <!-- PRODUCT -->
+    <!-- PRODUCT SELECT -->
     <label for="product">Product Name</label>
     <select id="product" name="product" required>
-      <option value="" disabled selected>Choose a Product ...</option>
+      <option value="" disabled selected>Select a Product ...</option>
       <option value="phone">Phone</option>
       <option value="laptop">Laptop</option>
       <option value="tablet">Tablet</option>
     </select>
 
-    <!-- ⭐ RATING -->
+    <!-- ⭐ STAR RATING -->
     <fieldset>
       <legend>Overall Rating</legend>
 
@@ -42,22 +48,22 @@
 
         <label for="rate2">
           ⭐⭐
-          <input type="radio" id="rate2" name="rating" value="2" required>
+          <input type="radio" id="rate2" name="rating" value="2">
         </label>
 
         <label for="rate3">
           ⭐⭐⭐
-          <input type="radio" id="rate3" name="rating" value="3" required>
+          <input type="radio" id="rate3" name="rating" value="3">
         </label>
 
         <label for="rate4">
           ⭐⭐⭐⭐
-          <input type="radio" id="rate4" name="rating" value="4" required>
+          <input type="radio" id="rate4" name="rating" value="4">
         </label>
 
         <label for="rate5">
           ⭐⭐⭐⭐⭐
-          <input type="radio" id="rate5" name="rating" value="5" required>
+          <input type="radio" id="rate5" name="rating" value="5">
         </label>
 
       </div>
@@ -84,19 +90,9 @@
       <label for="price">Price</label>
     </fieldset>
 
-    <!-- REVIEW -->
+    <!-- TEXTAREA -->
     <label for="review">Additional Comments</label>
     <textarea id="review" name="review" rows="4" placeholder="Write your review here..."></textarea>
 
-    <!-- BUTTON -->
+    <!-- SUBMIT -->
     <button type="submit">Submit Review</button>
-
-  </form>
-</main>
-
-<footer>
-  <p>&copy; 2026 Jesse Chisom Nnadi</p>
-</footer>
-
-</body>
-</html>
