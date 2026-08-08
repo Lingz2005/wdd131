@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home | Product Review</title>
   <meta name="description" content="Submit and track product reviews easily with our Product Review Hub.">
   <meta name="author" content="Jesse Chisom Nnadi">
-  <title>Home | Product Review</title>
+
   <link rel="stylesheet" href="styles/review.css">
 </head>
 
@@ -13,22 +15,73 @@
 
 <header>
   <h1>Product Review Hub</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="form.html">Write Review</a>
-    <a href="review.html">Review Count</a>
-  </nav>
 </header>
 
 <main>
-  <h2>Welcome</h2>
-  <p>Click below to submit your review.</p>
-  <a href="form.html" class="btn">Submit a Review</a>
+  <form method="get" action="review.html">
+
+    <!-- Product -->
+    <label for="product">Choose a Product</label>
+    <select id="product" name="product" required>
+      <option value="">-- Select a Product --</option>
+      <option value="phone">Phone</option>
+      <option value="laptop">Laptop</option>
+      <option value="tablet">Tablet</option>
+    </select>
+
+    <!-- ⭐ STAR RATING -->
+    <fieldset>
+      <legend>Rating</legend>
+
+      <div class="stars">
+        <input type="radio" id="star5" name="rating" value="5" required>
+        <label for="star5">★</label>
+
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">★</label>
+
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">★</label>
+
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">★</label>
+
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">★</label>
+      </div>
+
+    </fieldset>
+
+    <!-- Date -->
+    <label for="date">Review Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <!-- Features -->
+    <fieldset>
+      <legend>Features You Liked</legend>
+
+      <label><input type="checkbox" name="features" value="design"> Design</label>
+      <label><input type="checkbox" name="features" value="performance"> Performance</label>
+      <label><input type="checkbox" name="features" value="battery"> Battery</label>
+      <label><input type="checkbox" name="features" value="price"> Price</label>
+
+    </fieldset>
+
+    <!-- Review -->
+    <label for="review">Your Review</label>
+    <textarea id="review" name="review" rows="4"></textarea>
+
+    <!-- Submit -->
+    <button type="submit">Submit Review</button>
+
+  </form>
 </main>
 
 <footer>
   <p>&copy; 2026 Jesse Chisom Nnadi</p>
 </footer>
+
+<script src="scripts/review.js"></script>
 
 </body>
 </html>
