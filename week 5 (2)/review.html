@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Review Count</title>
+  <meta name="description" content="View total submitted product reviews.">
+  <meta name="author" content="Jesse Chisom Nnadi">
+  <title>Review Count | Product Review</title>
   <link rel="stylesheet" href="styles/review.css">
 </head>
 
@@ -25,7 +27,7 @@
 </footer>
 
 <script>
-  let count = localStorage.getItem("reviewCount") || 0;
+  let count = parseInt(localStorage.getItem("reviewCount")) || 0;
   document.getElementById("reviewCount").textContent = count;
 </script>
 

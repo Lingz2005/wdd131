@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Submit Review</title>
+  <meta name="description" content="Submit your product review.">
+  <meta name="author" content="Jesse Chisom Nnadi">
+  <title>Submit Review | Product Review</title>
   <link rel="stylesheet" href="styles/review.css">
   <script src="scripts/review.js" defer></script>
 </head>
@@ -11,11 +13,11 @@
 <body>
 
 <header>
-  <h1>Submit a Product Review</h1>
+  <h1>Submit a Review</h1>
 </header>
 
 <main>
-  <form id="reviewForm" action="review.html">
+  <form id="reviewForm" method="get" action="review.html">
 
     <label for="product">Product *</label>
     <select id="product" name="product" required>
@@ -29,6 +31,14 @@
       <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
       <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
       <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Features Installed</legend>
+      <label><input type="checkbox" name="feature" value="durable"> Durable</label>
+      <label><input type="checkbox" name="feature" value="easy"> Easy Install</label>
+      <label><input type="checkbox" name="feature" value="efficient"> Energy Efficient</label>
+      <label><input type="checkbox" name="feature" value="compact"> Compact Design</label>
     </fieldset>
 
     <label for="date">Date of Installation *</label>
