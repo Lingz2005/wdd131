@@ -1,3 +1,4 @@
+/* GENERAL */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,6 +6,7 @@ body {
   color: #111111;
 }
 
+/* HEADER */
 header {
   background: #1a1a1a;
   color: #ffffff;
@@ -12,29 +14,38 @@ header {
   text-align: center;
 }
 
+/* MAIN CONTENT */
 main {
   padding: 20px;
   max-width: 600px;
   margin: auto;
 }
 
+/* FORM ELEMENTS */
 label {
   display: block;
   margin-top: 10px;
   font-weight: bold;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
+  box-sizing: border-box;
 }
 
 fieldset {
   margin-top: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
-button, .btn {
+/* BUTTONS */
+button,
+.btn {
   display: inline-block;
   margin-top: 15px;
   padding: 10px;
@@ -43,12 +54,15 @@ button, .btn {
   border: none;
   text-decoration: none;
   cursor: pointer;
+  text-align: center;
 }
 
-button:hover, .btn:hover {
+button:hover,
+.btn:hover {
   background: #003f88;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 1rem;
@@ -81,4 +95,20 @@ footer {
 .stars label:hover,
 .stars label:hover ~ label {
   color: gold;
+}
+
+/* 📱 MEDIA QUERY (REQUIRED) */
+@media (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  .stars label {
+    font-size: 24px;
+  }
+
+  button,
+  .btn {
+    width: 100%;
+  }
 }

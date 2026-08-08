@@ -9,6 +9,7 @@
   <meta name="author" content="Jesse Chisom Nnadi">
 
   <link rel="stylesheet" href="styles/review.css">
+  <script src="scripts/review.js" defer></script>
 </head>
 
 <body>
@@ -20,16 +21,16 @@
 <main>
   <form method="get" action="review.html">
 
-    <!-- Product -->
+    <!-- SELECT (FIXED) -->
     <label for="product">Choose a Product</label>
     <select id="product" name="product" required>
-      <option value="">-- Select a Product --</option>
+      <option value="" disabled selected>-- Select a Product --</option>
       <option value="phone">Phone</option>
       <option value="laptop">Laptop</option>
       <option value="tablet">Tablet</option>
     </select>
 
-    <!-- ⭐ STAR RATING -->
+    <!-- ⭐ STAR RATING (FIXED REQUIRED) -->
     <fieldset>
       <legend>Rating</legend>
 
@@ -37,41 +38,48 @@
         <input type="radio" id="star5" name="rating" value="5" required>
         <label for="star5">★</label>
 
-        <input type="radio" id="star4" name="rating" value="4">
+        <input type="radio" id="star4" name="rating" value="4" required>
         <label for="star4">★</label>
 
-        <input type="radio" id="star3" name="rating" value="3">
+        <input type="radio" id="star3" name="rating" value="3" required>
         <label for="star3">★</label>
 
-        <input type="radio" id="star2" name="rating" value="2">
+        <input type="radio" id="star2" name="rating" value="2" required>
         <label for="star2">★</label>
 
-        <input type="radio" id="star1" name="rating" value="1">
+        <input type="radio" id="star1" name="rating" value="1" required>
         <label for="star1">★</label>
       </div>
 
     </fieldset>
 
-    <!-- Date -->
+    <!-- DATE -->
     <label for="date">Review Date</label>
     <input type="date" id="date" name="date" required>
 
-    <!-- Features -->
+    <!-- CHECKBOXES (FIXED IDS + LABELS) -->
     <fieldset>
       <legend>Features You Liked</legend>
 
-      <label><input type="checkbox" name="features" value="design"> Design</label>
-      <label><input type="checkbox" name="features" value="performance"> Performance</label>
-      <label><input type="checkbox" name="features" value="battery"> Battery</label>
-      <label><input type="checkbox" name="features" value="price"> Price</label>
+      <input type="checkbox" id="design" name="features" value="design">
+      <label for="design">Design</label>
+
+      <input type="checkbox" id="performance" name="features" value="performance">
+      <label for="performance">Performance</label>
+
+      <input type="checkbox" id="battery" name="features" value="battery">
+      <label for="battery">Battery</label>
+
+      <input type="checkbox" id="price" name="features" value="price">
+      <label for="price">Price</label>
 
     </fieldset>
 
-    <!-- Review -->
+    <!-- TEXTAREA -->
     <label for="review">Your Review</label>
     <textarea id="review" name="review" rows="4"></textarea>
 
-    <!-- Submit -->
+    <!-- SUBMIT -->
     <button type="submit">Submit Review</button>
 
   </form>
@@ -80,8 +88,6 @@
 <footer>
   <p>&copy; 2026 Jesse Chisom Nnadi</p>
 </footer>
-
-<script src="scripts/review.js"></script>
 
 </body>
 </html>
