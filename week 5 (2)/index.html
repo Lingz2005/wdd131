@@ -4,62 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Home | Product Review</title>
-  <meta name="description" content="Submit and track product reviews easily with our Product Review Hub.">
+  <title>Product Review</title>
+  <meta name="description" content="Submit a product review">
   <meta name="author" content="Jesse Chisom Nnadi">
 
   <link rel="stylesheet" href="styles/review.css">
-  <script src="scripts/review.js" defer></script>
 </head>
 
 <body>
 
 <header>
-  <h1>Product Review Hub</h1>
+  <h1>Product Review</h1>
 </header>
 
 <main>
   <form method="get" action="review.html">
 
-    <!-- SELECT (FIXED) -->
-    <label for="product">Choose a Product</label>
+    <!-- PRODUCT -->
+    <label for="product">Product Name</label>
     <select id="product" name="product" required>
-      <option value="" disabled selected>-- Select a Product --</option>
+      <option value="" disabled selected>Choose a Product ...</option>
       <option value="phone">Phone</option>
       <option value="laptop">Laptop</option>
       <option value="tablet">Tablet</option>
     </select>
 
-    <!-- ⭐ STAR RATING (FIXED REQUIRED) -->
+    <!-- ⭐ RATING -->
     <fieldset>
-      <legend>Rating</legend>
+      <legend>Overall Rating</legend>
 
-      <div class="stars">
-        <input type="radio" id="star5" name="rating" value="5" required>
-        <label for="star5">★</label>
+      <div class="star-group">
 
-        <input type="radio" id="star4" name="rating" value="4" required>
-        <label for="star4">★</label>
+        <label for="rate1">
+          ⭐
+          <input type="radio" id="rate1" name="rating" value="1" required>
+        </label>
 
-        <input type="radio" id="star3" name="rating" value="3" required>
-        <label for="star3">★</label>
+        <label for="rate2">
+          ⭐⭐
+          <input type="radio" id="rate2" name="rating" value="2" required>
+        </label>
 
-        <input type="radio" id="star2" name="rating" value="2" required>
-        <label for="star2">★</label>
+        <label for="rate3">
+          ⭐⭐⭐
+          <input type="radio" id="rate3" name="rating" value="3" required>
+        </label>
 
-        <input type="radio" id="star1" name="rating" value="1" required>
-        <label for="star1">★</label>
+        <label for="rate4">
+          ⭐⭐⭐⭐
+          <input type="radio" id="rate4" name="rating" value="4" required>
+        </label>
+
+        <label for="rate5">
+          ⭐⭐⭐⭐⭐
+          <input type="radio" id="rate5" name="rating" value="5" required>
+        </label>
+
       </div>
-
     </fieldset>
 
     <!-- DATE -->
-    <label for="date">Review Date</label>
+    <label for="date">Date of Installation</label>
     <input type="date" id="date" name="date" required>
 
-    <!-- CHECKBOXES (FIXED IDS + LABELS) -->
+    <!-- FEATURES -->
     <fieldset>
-      <legend>Features You Liked</legend>
+      <legend>Which features did you find useful in the product?</legend>
 
       <input type="checkbox" id="design" name="features" value="design">
       <label for="design">Design</label>
@@ -72,14 +82,13 @@
 
       <input type="checkbox" id="price" name="features" value="price">
       <label for="price">Price</label>
-
     </fieldset>
 
-    <!-- TEXTAREA -->
-    <label for="review">Your Review</label>
-    <textarea id="review" name="review" rows="4"></textarea>
+    <!-- REVIEW -->
+    <label for="review">Additional Comments</label>
+    <textarea id="review" name="review" rows="4" placeholder="Write your review here..."></textarea>
 
-    <!-- SUBMIT -->
+    <!-- BUTTON -->
     <button type="submit">Submit Review</button>
 
   </form>
