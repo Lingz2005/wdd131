@@ -31,35 +31,28 @@
       <option value="tablet">Tablet</option>
     </select>
 
-    <!-- RATING -->
+    <!-- ⭐ RATING (FIXED) -->
     <fieldset>
       <legend>Overall Rating</legend>
 
-      <label>
-        ⭐
-        <input type="radio" name="rating" value="1" required>
-      </label>
+      <div class="star-group">
 
-      <label>
-        ⭐⭐
-        <input type="radio" name="rating" value="2" required>
-      </label>
+        <input type="radio" id="rate1" name="rating" value="1" required>
+        <label for="rate1">⭐</label>
 
-      <label>
-        ⭐⭐⭐
-        <input type="radio" name="rating" value="3" required>
-      </label>
+        <input type="radio" id="rate2" name="rating" value="2" required>
+        <label for="rate2">⭐⭐</label>
 
-      <label>
-        ⭐⭐⭐⭐
-        <input type="radio" name="rating" value="4" required>
-      </label>
+        <input type="radio" id="rate3" name="rating" value="3" required>
+        <label for="rate3">⭐⭐⭐</label>
 
-      <label>
-        ⭐⭐⭐⭐⭐
-        <input type="radio" name="rating" value="5" required>
-      </label>
+        <input type="radio" id="rate4" name="rating" value="4" required>
+        <label for="rate4">⭐⭐⭐⭐</label>
 
+        <input type="radio" id="rate5" name="rating" value="5" required>
+        <label for="rate5">⭐⭐⭐⭐⭐</label>
+
+      </div>
     </fieldset>
 
     <!-- DATE -->
@@ -85,7 +78,7 @@
 
     <!-- COMMENTS -->
     <label for="review">Additional Comments</label>
-    <textarea id="review" name="review" rows="4"></textarea>
+    <textarea id="review" name="review" rows="4" placeholder="Write your review here..."></textarea>
 
     <!-- SUBMIT -->
     <button type="submit">Submit Review</button>
