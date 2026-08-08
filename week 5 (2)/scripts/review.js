@@ -1,35 +1,24 @@
-// review.js (FINAL)
-// =========================
-
-// Product List
+// Product Array
 const products = [
-{ id: "p1", name: "iPhone 14" },
-{ id: "p2", name: "Samsung Galaxy S23" },
-{ id: "p3", name: "HP Laptop" },
-{ id: "p4", name: "PlayStation 5" }
+  { id: "p1", name: "Solar Panel" },
+  { id: "p2", name: "Smart Thermostat" },
+  { id: "p3", name: "LED Lighting System" },
+  { id: "p4", name: "Water Filtration Unit" }
 ];
 
-// Populate Product Dropdown (index.html only)
+// Populate dropdown
 const productSelect = document.getElementById("product");
 
-if (productSelect) {
 products.forEach(product => {
-const option = document.createElement("option");
-option.value = product.id;
-option.textContent = product.name;
-productSelect.appendChild(option);
+  let option = document.createElement("option");
+  option.value = product.id;
+  option.textContent = product.name;
+  productSelect.appendChild(option);
 });
-}
 
-// Review Counter (review.html only)
-const reviewCountDisplay = document.getElementById("reviewCount");
-
-if (reviewCountDisplay) {
-let count = Number(localStorage.getItem("reviewCount")) || 0;
-
-count += 1;
-
-localStorage.setItem("reviewCount", count);
-
-reviewCountDisplay.textContent = count;
-}
+// Handle form submission (ONLY increment count here)
+document.getElementById("reviewForm").addEventListener("submit", () => {
+  let count = localStorage.getItem("reviewCount") || 0;
+  count++;
+  localStorage.setItem("reviewCount", count);
+});

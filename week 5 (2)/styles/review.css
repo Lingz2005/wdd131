@@ -1,179 +1,65 @@
-/* =========================
-review.css (ADVANCED VERSION)
-Clean • Modern • Instructor-Friendly
-========================= */
-
-:root {
---primary: #1f2933;
---accent: #3b82f6;
---bg: #f4f6f8;
---card: #ffffff;
---border: #d1d5db;
-}
-
-/* Reset */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
-
-/* Body */
 body {
-font-family: Arial, Helvetica, sans-serif;
-line-height: 1.6;
-background: var(--bg);
-color: #222;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #111111; /* strong contrast */
 }
 
-/* Header */
 header {
-background: var(--primary);
-color: #fff;
-padding: 1.2rem;
-text-align: center;
-letter-spacing: 1px;
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
 }
 
-/* Main Card */
+nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 main {
-max-width: 650px;
-margin: 2.5rem auto;
-padding: 2rem;
-background: var(--card);
-border-radius: 10px;
-box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
 }
 
-/* Section spacing */
-form > * + * {
-margin-top: 1rem;
-}
-
-/* Labels */
 label {
-font-weight: bold;
-display: block;
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-/* Inputs */
-input,
-select,
-textarea {
-width: 100%;
-padding: 0.65rem;
-margin-top: 0.3rem;
-border: 1px solid var(--border);
-border-radius: 6px;
-font-size: 1rem;
-transition: all 0.2s ease;
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
 }
 
-/* Focus */
-input:focus,
-select:focus,
-textarea:focus {
-outline: none;
-border-color: var(--accent);
-box-shadow: 0 0 4px rgba(59, 130, 246, 0.4);
-}
-
-/* Fieldset */
 fieldset {
-border: 1px solid var(--border);
-border-radius: 6px;
-padding: 1rem;
+  margin-top: 15px;
 }
 
-/* Legend */
-legend {
-font-weight: bold;
-padding: 0 0.5rem;
+button, .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px;
+  background: #0056b3;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/* Rating stars layout */
-fieldset label {
-display: inline-flex;
-align-items: center;
-gap: 0.2rem;
-margin-right: 0.8rem;
-cursor: pointer;
-font-weight: normal;
+button:hover, .btn:hover {
+  background: #003f88;
 }
 
-/* Hover effect */
-fieldset label:hover {
-transform: scale(1.1);
-}
-
-/* Button */
-button {
-width: 100%;
-padding: 0.75rem;
-background: var(--primary);
-color: #fff;
-border: none;
-border-radius: 6px;
-font-size: 1rem;
-cursor: pointer;
-transition: all 0.25s ease;
-}
-
-/* Button hover */
-button:hover {
-background: #111827;
-transform: translateY(-2px);
-}
-
-/* Button active */
-button:active {
-transform: scale(0.98);
-}
-
-/* Review Count */
-#reviewCount {
-font-size: 2.8rem;
-font-weight: bold;
-text-align: center;
-margin-top: 1rem;
-color: var(--primary);
-}
-
-/* Success text */
-main p {
-text-align: center;
-font-size: 1.1rem;
-}
-
-/* Link */
-a {
-display: block;
-text-align: center;
-margin-top: 2rem;
-font-weight: bold;
-color: var(--accent);
-text-decoration: none;
-}
-
-a:hover {
-text-decoration: underline;
-}
-
-/* Footer */
 footer {
-margin-top: 2rem;
-padding: 1rem;
-text-align: center;
-background: var(--primary);
-color: #fff;
-font-size: 0.9rem;
-}
-
-/* Responsive tweak */
-@media (max-width: 600px) {
-main {
-margin: 1.5rem;
-padding: 1.5rem;
-}
+  text-align: center;
+  padding: 1rem;
+  background: #1a1a1a;
+  color: white;
+  margin-top: 20px;
 }

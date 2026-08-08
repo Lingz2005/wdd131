@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Review</title>
+  <link rel="stylesheet" href="styles/review.css">
+  <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Submit a Product Review</h1>
+</header>
+
+<main>
+  <form id="reviewForm" action="review.html">
+
+    <label for="product">Product *</label>
+    <select id="product" name="product" required>
+      <option value="">Select a Product</option>
+    </select>
+
+    <fieldset>
+      <legend>Rating *</legend>
+      <label><input type="radio" name="rating" value="1" required> ⭐</label>
+      <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
+      <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
+      <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
+      <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+    </fieldset>
+
+    <label for="date">Date of Installation *</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="review">Written Review *</label>
+    <textarea id="review" name="review" required></textarea>
+
+    <label for="username">Your Name</label>
+    <input type="text" id="username" name="username">
+
+    <button type="submit">Submit Review</button>
+
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2026 Jesse Chisom Nnadi</p>
+</footer>
+
+</body>
+</html>

@@ -1,39 +1,33 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Review</title>  <link rel="stylesheet" href="styles/review.css">
-  <script src="scripts/review.js" defer></script>
-</head><body><header>
-  <h1>Product Review</h1>
-</header><main>
-  <form action="review.html" method="get"><label for="product">Product</label>
-<select id="product" name="product" required>
-  <option value="" disabled selected>Select a Product</option>
-</select>
+  <title>Home | Product Review</title>
+  <link rel="stylesheet" href="styles/review.css">
+</head>
 
-<fieldset>
-  <legend>Rating</legend>
-  <label><input type="radio" name="rating" value="1" required> ⭐</label>
-  <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
-  <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
-  <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
-  <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
-</fieldset>
+<body>
 
-<label for="date">Date of Installation</label>
-<input type="date" id="date" name="date" required>
+<header>
+  <h1>Product Review Hub</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="form.html">Write Review</a>
+    <a href="review.html">Review Count</a>
+  </nav>
+</header>
 
-<label for="review">Written Review</label>
-<textarea id="review" name="review" rows="4" required></textarea>
+<main>
+  <h2>Welcome</h2>
+  <p>Click below to submit your review.</p>
 
-<label for="username">Your Name</label>
-<input type="text" id="username" name="username" required>
+  <a href="form.html" class="btn">Submit a Review</a>
+</main>
 
-<button type="submit">Submit Review</button>
-
-  </form>
-</main><footer>
+<footer>
   <p>&copy; 2026 Jesse Chisom Nnadi</p>
-</footer></body>
+</footer>
+
+</body>
 </html>
